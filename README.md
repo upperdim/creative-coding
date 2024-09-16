@@ -7,6 +7,12 @@ directory browsing.
 
 Individual html files in project directories can still be viewed manually though.
 
+## Alternative CDN Import
+
+p5js library can alternatively be imported online from CDN.
+
+https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js
+
 ## Contents of the repository
 
 - index.html: It is recommended that this file is hosted with a live server.
