@@ -21,6 +21,21 @@ function setup() {
 	createCanvas(w, h);
 	background(100);
 
+	// Simple and painless way of drawing 
+	for (let x = 0; x < w; x += 0.5) {
+		const offsetFromTop = 150;
+
+		// Graph of function
+		let y = 0.1 * (x*x);
+		putPoint(x, y + offsetFromTop, 'cyan');
+
+		// Sin wave, simply amplify it to make is visible
+		const xRadian = x * (PI / 180);
+		y = 100 * sin(xRadian);
+		putPoint(x, y + offsetFromTop, 'magenta');
+	}
+
+	// Very painful way with creating graph and screen space infrastructure
 	xStart = -10.0;
 	xEnd   =  10.0;
 
